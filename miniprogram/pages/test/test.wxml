@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+
+  <button class='btn' bindtap="onAddData" type="primary">新增数据</button>
+  <button class='btn' bindtap="onGetData">读取数据</button>
+  <button class='btn' bindtap="onQueryData" type="primary">查询数据</button>
+  <button class='btn' bindtap="onUpdataData" >更新数据</button>
+  <button class='btn' bindtap="onRemoveData" type="primary">删除数据</button>
+  <button class='btn' bindtap="chooseImage" > 上传图片</button>
+  <button class='btn' bindtap="downloadFile" type="primary"> 下载图片</button>
+  <button class='btn' bindtap="useCloudFun" > 调用云函数 </button>  
+  <image src="{{imgUrl}}" />
+  <text class="res-data" wx:if="{{resData}}">{{resData}}</text>
+</view>
