@@ -159,8 +159,8 @@ Page({
     wx.cloud.callFunction({
       name: 'add',
       data: {
-        a: 10,
-        b: 290
+        a: 100,
+        b: 500
       }
     })
     .then(res => {
