@@ -165,6 +165,9 @@ Page({
     })
     .then(res => {
       console.log(res.result)
+      wx.showToast({
+        title: "调用云函数成功"
+      });
     })
     .catch( err => {
       console.log(err)
